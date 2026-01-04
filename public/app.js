@@ -1,6 +1,10 @@
-document.getElementById("anio").textContent = new Date().getFullYear();
+// Estado + año automático (simple y estable)
+document.addEventListener("DOMContentLoaded", async () => {
+  const anio = document.getElementById("anio");
+  if (anio) anio.textContent = new Date().getFullYear();
 
-fetch("/api/status")
-  .then(r => r.json())
-  .then(s => (document.getElementById("estado").textContent = s.msg))
-  .catch(() => (document.getElementById("estado").textContent = "Servidor no disponible"));
+  const estado = document.getElementById("estado");
+  if (estado) estado.textContent = "✅ Servidor funcionando";
+
+  // Si tu backend devuelve datos, aquí puedes conectarlo luego.
+});
