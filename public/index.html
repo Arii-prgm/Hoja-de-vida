@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ariela Sánchez | Portafolio</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <!-- NAV -->
   <header class="topbar">
     <div class="brand">Ariela Sánchez</div>
     <nav class="nav">
@@ -24,24 +29,27 @@
   </header>
 
   <main class="container">
+
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-card">
-       <div class="avatar">
-  <img src="foto.jpg" alt="Foto de Ariela Sánchez">
-</div>
 
+        <!-- AVATAR -->
+        <div class="avatar">
+          <img src="foto.jpg" alt="Foto de Ariela Sánchez">
+        </div>
 
-
+        <!-- INFO -->
         <div class="hero-info">
-          <p class="pill" id="estado">Cargando…</p>
+          <span class="pill" id="estado">Servidor funcionando</span>
 
           <h1 id="nombre">Ariela Angelina Sánchez Angulo</h1>
           <p class="subtitle" id="titulo">Estudiante de Software</p>
 
           <div class="contact-row">
-            <span class="chip">📍 <span id="ubicacion">Manta, Ecuador</span></span>
-            <span class="chip">✉️ <span id="email">ariela.sanan9@gmail.com</span></span>
-            <span class="chip">📞 <span id="telefono">0998210425</span></span>
+            <span class="chip">📍 Manta, Ecuador</span>
+            <span class="chip">✉️ ariela.sanan9@gmail.com</span>
+            <span class="chip">📞 0998210425</span>
           </div>
 
           <div class="actions">
@@ -53,30 +61,33 @@
       </div>
     </section>
 
+    <!-- SOBRE MI + HABILIDADES -->
     <section class="grid">
+
       <section class="card" id="sobre-mi">
         <div class="card-head">
           <h2>Sobre mí</h2>
           <span class="badge">Perfil</span>
         </div>
-        <p class="text" id="resumen">
-          Soy estudiante de Software en Manta, Ecuador. Me gusta crear interfaces claras y funcionales,
-          aprender rápido y trabajar con disciplina. Mi enfoque es construir proyectos con buena experiencia
-          de usuario y una base técnica sólida.
+
+        <p class="text">
+          Soy estudiante de Software en Manta, Ecuador. Me interesa crear interfaces claras,
+          funcionales y con buena experiencia de usuario. Trabajo con disciplina, constancia
+          y ganas de seguir aprendiendo en el área tecnológica.
         </p>
 
         <div class="mini">
           <div class="mini-item">
             <p class="mini-k">Enfoque</p>
-            <p class="mini-v">Frontend + UX/UI</p>
+            <p class="mini-v">Frontend · UX/UI</p>
           </div>
           <div class="mini-item">
             <p class="mini-k">Intereses</p>
-            <p class="mini-v">Web, apps, diseño</p>
+            <p class="mini-v">Web · Apps · Diseño</p>
           </div>
           <div class="mini-item">
             <p class="mini-k">Actitud</p>
-            <p class="mini-v">Constante y proactiva</p>
+            <p class="mini-v">Responsable y proactiva</p>
           </div>
         </div>
       </section>
@@ -87,10 +98,10 @@
           <span class="badge">Skills</span>
         </div>
 
-        <div class="tags" id="habilidades-lista">
+        <div class="tags">
           <span class="tag">HTML / CSS</span>
           <span class="tag">JavaScript básico</span>
-          <span class="tag">UI limpio y moderno</span>
+          <span class="tag">UX/UI</span>
           <span class="tag">Comunicación</span>
           <span class="tag">Trabajo en equipo</span>
           <span class="tag">Aprendizaje rápido</span>
@@ -98,21 +109,24 @@
 
         <div class="bars">
           <div class="bar">
-            <div class="bar-top"><span>HTML/CSS</span><span>80%</span></div>
+            <div class="bar-top"><span>HTML / CSS</span><span>80%</span></div>
             <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
           </div>
+
           <div class="bar">
             <div class="bar-top"><span>JavaScript</span><span>55%</span></div>
             <div class="bar-track"><div class="bar-fill" style="width:55%"></div></div>
           </div>
+
           <div class="bar">
-            <div class="bar-top"><span>UX/UI</span><span>70%</span></div>
+            <div class="bar-top"><span>UX / UI</span><span>70%</span></div>
             <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
           </div>
         </div>
       </section>
     </section>
 
+    <!-- PROYECTOS -->
     <section class="card" id="proyectos">
       <div class="card-head">
         <h2>Proyectos</h2>
@@ -120,70 +134,58 @@
       </div>
 
       <div class="projects">
+
         <article class="project">
-          <div class="project-top">
-            <h3>Hoja de vida en Azure</h3>
-            <span class="pill soft">Node + Azure App Service</span>
-          </div>
+          <h3>Hoja de vida en Azure</h3>
           <p class="muted">
-            Sitio tipo CV desplegado en Azure con integración a GitHub Actions para despliegue automático.
+            Portafolio desplegado en Azure App Service con GitHub Actions
+            para despliegue automático.
           </p>
-          <div class="project-links">
-            <a class="link" href="#contacto">Solicitar demo</a>
-            <a class="link" href="https://github.com/Arii-prgm/Hoja-de-vida" target="_blank" rel="noreferrer">Repositorio</a>
-          </div>
+          <a class="link" href="https://github.com/Arii-prgm/Hoja-de-vida" target="_blank">Repositorio</a>
         </article>
 
         <article class="project">
-          <div class="project-top">
-            <h3>Sistema de gestión hotelera (U)</h3>
-            <span class="pill soft">Casos de uso + análisis</span>
-          </div>
+          <h3>Sistema de gestión hotelera</h3>
           <p class="muted">
-            Documentación y modelado de un sistema: roles, casos de uso, flujos y estructura.
+            Modelado de sistema con casos de uso, roles y flujos funcionales.
           </p>
-          <div class="project-links">
-            <a class="link" href="#contacto">Consultar</a>
-            <a class="link" href="https://github.com/Arii-prgm" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
         </article>
 
         <article class="project">
-          <div class="project-top">
-            <h3>Diseño de interfaces</h3>
-            <span class="pill soft">UI moderna</span>
-          </div>
+          <h3>Diseño de interfaces</h3>
           <p class="muted">
-            Prácticas de diseño visual: tipografía, jerarquía, layout, estilos y consistencia.
+            Prácticas de diseño visual: tipografía, layout y consistencia.
           </p>
-          <div class="project-links">
-            <a class="link" href="#contacto">Ver trabajos</a>
-            <a class="link" href="#habilidades">Habilidades</a>
-          </div>
         </article>
+
       </div>
     </section>
 
+    <!-- CONTACTO -->
     <section class="card" id="contacto">
       <div class="card-head">
         <h2>Contacto</h2>
         <span class="badge">Let’s talk</span>
       </div>
 
-      <p class="muted">Si quieres hablar de un proyecto, práctica o colaboración, escríbeme.</p>
+      <p class="muted">
+        Si deseas conversar sobre un proyecto o colaboración, escríbeme.
+      </p>
 
       <div class="links">
         <a href="mailto:ariela.sanan9@gmail.com">📩 Correo</a>
         <a href="tel:+593998210425">📞 Llamar</a>
-        <a href="https://github.com/Arii-prgm" target="_blank" rel="noreferrer">💻 GitHub</a>
+        <a href="https://github.com/Arii-prgm" target="_blank">💻 GitHub</a>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <span>© <span id="anio"></span> Ariela Sánchez</span>
       <span class="dot">•</span>
-      <span class="muted">Hecho con cariño y constancia ✨</span>
+      <span class="muted">Hecho con constancia ✨</span>
     </footer>
+
   </main>
 
   <script src="app.js"></script>
