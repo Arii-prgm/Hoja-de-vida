@@ -1,3 +1,5 @@
-node_modules/
+django_portafolio/
+*.pyc
+__pycache__/
+venv/
 .env
-.DS_Store
