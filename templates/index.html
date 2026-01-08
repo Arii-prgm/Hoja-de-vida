@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ariela Sánchez | Portafolio</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<!-- =========================
+     TOPBAR
+========================= -->
+<header class="topbar">
+    <div class="brand">Ariela Sánchez</div>
+    <nav class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto" class="btn">Contacto</a>
+    </nav>
+</header>
+
+<main class="container">
+
+<!-- =========================
+     HERO
+========================= -->
+<section class="card hero-card">
+    <div class="avatar">
+        <img src="{% static 'foto.jpg' %}" alt="Foto de Ariela Sánchez">
+    </div>
+
+    <div class="hero-info">
+        <span class="pill">Estudiante de Software</span>
+        <h1>Ariela Angelina Sánchez Angulo</h1>
+        <p class="subtitle">
+            Desarrollo interfaces claras y funcionales, con enfoque en experiencia de usuario.
+        </p>
+
+        <div class="contact-row">
+            <span class="chip">📍 Manta, Ecuador</span>
+            <span class="chip">✉️ ariela.sanan9@gmail.com</span>
+            <span class="chip">📞 0998210425</span>
+        </div>
+
+        <div class="actions">
+            <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+            <a href="https://github.com/Arii-prgm" target="_blank" class="btn-ghost">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     GRID
+========================= -->
+<section class="grid">
+
+    <!-- SOBRE MÍ -->
+    <div class="card" id="sobre-mi">
+        <div class="card-head">
+            <h2>Sobre mí</h2>
+            <span class="badge">Perfil</span>
+        </div>
+
+        <p class="text">
+            Soy estudiante de Software en Manta, Ecuador. Me gusta crear interfaces claras,
+            aprender rápido y trabajar con disciplina.
+        </p>
+
+        <div class="mini">
+            <div>
+                <div class="mini-k">Enfoque</div>
+                <div class="mini-v">Frontend + UX/UI</div>
+            </div>
+            <div>
+                <div class="mini-k">Actitud</div>
+                <div class="mini-v">Constante y proactiva</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HABILIDADES -->
+    <div class="card" id="habilidades">
+        <div class="card-head">
+            <h2>Habilidades</h2>
+            <span class="badge">Tech</span>
+        </div>
+
+        <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">GitHub</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- =========================
+     PROYECTOS (FIJOS)
+========================= -->
+<section class="card" id="proyectos">
+    <div class="card-head">
+        <h2>Proyectos</h2>
+        <span class="badge">Portafolio</span>
+    </div>
+
+    <div class="projects">
+
+        <div class="project">
+            <div class="project-top">
+                <h3>Hoja de vida en Azure</h3>
+            </div>
+            <p class="muted">
+                Portafolio desplegado en Azure App Service con GitHub Actions
+                para despliegue automático.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/Arii-prgm/Hoja-de-vida" target="_blank" class="link">Repositorio</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-top">
+                <h3>Sistema de gestión hotelera</h3>
+            </div>
+            <p class="muted">
+                Modelado de sistema con casos de uso, roles y flujos funcionales.
+            </p>
+        </div>
+
+        <div class="project">
+            <div class="project-top">
+                <h3>Diseño de interfaces</h3>
+            </div>
+            <p class="muted">
+                Prácticas de diseño visual: tipografía, layout y consistencia.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================
+     CONTACTO
+========================= -->
+<section class="card" id="contacto">
+    <div class="card-head">
+        <h2>Contacto</h2>
+        <span class="badge">Let’s talk</span>
+    </div>
+
+    <p class="text">
+        Si deseas conversar sobre un proyecto o colaboración, escríbeme.
+    </p>
+
+    <div class="links">
+        <a href="mailto:ariela.sanan9@gmail.com">✉️ Correo</a>
+        <a href="tel:0998210425">📞 Llamar</a>
+        <a href="https://github.com/Arii-prgm" target="_blank">💻 GitHub</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <span>© 2026 Ariela Sánchez</span>
+    <span class="dot">•</span>
+    <span>Hecho con constancia ✨</span>
+</footer>
+
+</main>
+</body>
+</html>
+
+
