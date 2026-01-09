@@ -360,3 +360,43 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   D+ ANIMACIONES SUAVES
+========================= */
+
+/* Fade-in general al cargar */
+body {
+  animation: pageIn 600ms ease both;
+}
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover más elegante en cards */
+.card, .project {
+  transition: transform .25s ease, border-color .25s ease, background .25s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(110,168,255,.25);
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 600ms ease, transform 600ms ease;
+  will-change: opacity, transform;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduce motion (accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+  .reveal { transition: none; transform: none; opacity: 1; }
+}
+
